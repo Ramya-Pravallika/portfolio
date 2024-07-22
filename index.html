@@ -7219,6 +7219,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
+            box-sizing: border-box;
         }
         .container1 h2 {
             margin-top: 0;
@@ -7236,16 +7237,21 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 1px solid #000;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .container1 textarea {
+            border-radius: 25px;
         }
         .container1 input[type="submit"] {
             width: 100%;
             padding: 10px;
             background-color: #28a745;
-            border: none;
-            border-radius: 4px;
-            color: #fff;
+            border: 1px solid #000;
+            border-radius: 25px;
+            color: #000;
             font-size: 16px;
             cursor: pointer;
         }
@@ -8014,13 +8020,13 @@
                         <div class="container1">
                             <h2 id="text34">Contact me</h2>
                             <form action="https://formspree.io/f/mgvwovjq" method="post">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
-                                <label for="message">Message:</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                                <input type="submit" value="Submit">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                                <input type="submit" value="SUBMIT">
                         </form>
                             </div>
                         <div id="columns04" class="container default">
