@@ -4610,7 +4610,7 @@
                 }
             }
 
-
+            /* General form styles */
 #form01 .inner {
   display: flex;
   flex-direction: column;
@@ -4688,6 +4688,41 @@
     font-size: 14px;
   }
 }
+
+
+            @media (max-width: 1920px) {
+            }
+
+            @media (max-width: 1680px) {
+                html {
+                    font-size: 13pt;
+                }
+            }
+
+            @media (max-width: 1280px) {
+                html {
+                    font-size: 13pt;
+                }
+            }
+
+            @media (max-width: 1024px) {
+            }
+
+            @media (max-width: 980px) {
+                html {
+                    font-size: 11pt;
+                }
+            }
+
+            @media (max-width: 736px) {
+                html {
+                    font-size: 11pt;
+                }
+
+                #wrapper {
+                    padding: 1.75rem 1.75rem 1.75rem 1.75rem;
+                }
+
                 #main > .inner {
                     --padding-horizontal: 1.875rem;
                     --padding-vertical: 3.125rem;
@@ -6412,6 +6447,616 @@
                     width: 32rem;
                 }
 
+                #form01 label:first-child {
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                    letter-spacing: 0rem;
+                }
+
+                #form01 input[type="text"], #form01 input[type="email"], #form01 input[type="tel"], #form01 input[type="number"], #form01 textarea, #form01 select, #form01 .file, #form01 .date {
+                    font-size: 0.75em;
+                    letter-spacing: 0.025rem;
+                    padding-left: calc(0.025rem + 0.875rem);
+                }
+
+                #form01 textarea {
+                    line-height: 1.5;
+                    padding-top: 0.6125rem;
+                }
+
+                #form01 input[type="checkbox"] + label, #form01 p {
+                    font-size: 0.75em;
+                    line-height: 1.5;
+                    letter-spacing: 0.025rem;
+                    padding-left: 0.025rem;
+                }
+
+                #form01 .actions button {
+                    font-size: 0.875em;
+                    letter-spacing: 0.3rem;
+                    padding-left: calc(0.3rem + 0.5rem);
+                }
+            }
+
+            @media (max-width: 480px) {
+                #wrapper {
+                    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+                }
+
+                #main > .inner {
+                    --spacing: 1.3125rem;
+                }
+
+                #buttons02 {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+
+                #buttons02 li a {
+                    max-width: 32rem;
+                    width: 100%;
+                }
+
+                #buttons09 li a {
+                    width: 5.625rem;
+                }
+
+                #buttons04 li a {
+                    width: 5.125rem;
+                }
+
+                #buttons07 {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+
+                #buttons07 li a {
+                    max-width: 32rem;
+                    width: 100%;
+                }
+
+                #buttons08 li a {
+                    width: 5.625rem;
+                }
+
+                #buttons10 {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+
+                #buttons10 li a {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                #buttons03 {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+
+                #buttons03 li a {
+                    max-width: 32rem;
+                    width: 100%;
+                }
+
+                #buttons06 {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+
+                #buttons06 li a {
+                    max-width: 32rem;
+                    width: 100%;
+                }
+
+                #buttons05 {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+
+                #buttons05 li a {
+                    max-width: 32rem;
+                    width: 100%;
+                }
+
+                #buttons01 {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+
+                #buttons01 li a {
+                    max-width: 32rem;
+                    width: 100%;
+                }
+
+                #columns03 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #columns01 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #container02 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #columns05 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #columns02 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #container01 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #container03 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #container04 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #columns04 > .wrapper > .inner {
+                    --spacing: 0.875rem;
+                }
+
+                #form01 .actions button {
+                    max-width: 32rem;
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 360px) {
+                #wrapper {
+                    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                }
+
+                #main > .inner {
+                    --padding-horizontal: 1.40625rem;
+                    --padding-vertical: 2.34375rem;
+                    --spacing: 1.125rem;
+                }
+
+                #main > .inner > * > .full {
+                    margin-left: calc(-1.40625rem);
+                    max-width: calc(100% + 2.8125rem + 0.4725px);
+                    width: calc(100% + 2.8125rem + 0.4725px);
+                }
+
+                #main > .inner > * > .full.screen {
+                    margin-left: -50vw;
+                }
+
+                #main > .inner > footer > .full:last-child {
+                    margin-bottom: -2.34375rem !important;
+                }
+
+                #main > .inner > .active > .full:first-child {
+                    margin-top: -2.34375rem !important;
+                }
+
+                #text10 {
+                    font-size: 0.875em;
+                }
+
+                #text07 {
+                    font-size: 0.875em;
+                }
+
+                #text02 {
+                    font-size: 1em;
+                }
+
+                #text36 {
+                    font-size: 0.875em;
+                }
+
+                #text08 {
+                    font-size: 1em;
+                }
+
+                #text11 {
+                    font-size: 1em;
+                }
+
+                #text03 {
+                    font-size: 2em;
+                }
+
+                #text30 {
+                    font-size: 0.75em;
+                }
+
+                #text18 {
+                    font-size: 1.5em;
+                }
+
+                #text17 {
+                    font-size: 1em;
+                }
+
+                #text39 {
+                    font-size: 1.5em;
+                }
+
+                #text19 {
+                    font-size: 1em;
+                }
+
+                #text40 {
+                    font-size: 1em;
+                }
+
+                #text41 {
+                    font-size: 1em;
+                }
+
+                #text42 {
+                    font-size: 1em;
+                }
+
+                #text43 {
+                    font-size: 1em;
+                }
+
+                #text44 {
+                    font-size: 1em;
+                }
+
+                #text28 {
+                    font-size: 1.5em;
+                }
+
+                #text20 {
+                    font-size: 0.875em;
+                }
+
+                #text21 {
+                    font-size: 1em;
+                }
+
+                #text35 {
+                    font-size: 1.5em;
+                }
+
+                #text33 {
+                    font-size: 0.875em;
+                }
+
+                #text09 {
+                    font-size: 1em;
+                }
+
+                #text31 {
+                    font-size: 1em;
+                }
+
+                #text38 {
+                    font-size: 1em;
+                }
+
+                #text32 {
+                    font-size: 1.5em;
+                }
+
+                #text05 {
+                    font-size: 0.875em;
+                }
+
+                #text12 {
+                    font-size: 1.25em;
+                }
+
+                #text13 {
+                    font-size: 1em;
+                }
+
+                #text14 {
+                    font-size: 1.25em;
+                }
+
+                #text15 {
+                    font-size: 1em;
+                }
+
+                #text26 {
+                    font-size: 1em;
+                }
+
+                #text27 {
+                    font-size: 1.25em;
+                }
+
+                #text06 {
+                    font-size: 1em;
+                }
+
+                #text22 {
+                    font-size: 1em;
+                }
+
+                #text23 {
+                    font-size: 1em;
+                }
+
+                #text24 {
+                    font-size: 1em;
+                }
+
+                #text29 {
+                    font-size: 1em;
+                }
+
+                #text01 {
+                    font-size: 1.25em;
+                }
+
+                #text25 {
+                    font-size: 1em;
+                }
+
+                #text37 {
+                    font-size: 1.5em;
+                }
+
+                #text16 {
+                    font-size: 0.75em;
+                }
+
+                #text34 {
+                    font-size: 1.5em;
+                }
+
+                #text04 {
+                    font-size: 0.75em;
+                }
+
+                #buttons02 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons09 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons04 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons07 {
+                    gap: 0rem;
+                }
+
+                #buttons08 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons10 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons03 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons06 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons05 {
+                    gap: 0.5625rem;
+                }
+
+                #buttons01 {
+                    gap: 0.5625rem;
+                }
+
+                #icons08 {
+                    gap: 0.9375rem;
+                }
+
+                #icons02 {
+                    gap: 0.9375rem;
+                }
+
+                #icons04 {
+                    gap: 0.9375rem;
+                }
+
+                #icons05 {
+                    gap: 0.9375rem;
+                }
+
+                #icons01 {
+                    gap: 0.9375rem;
+                }
+
+                #icons06 {
+                    gap: 0.9375rem;
+                }
+
+                #icons03 {
+                    gap: 0.9375rem;
+                }
+
+                #icons07 {
+                    gap: 0.9375rem;
+                }
+
+                #columns03 > .wrapper > .inner {
+                    --gutters: 2.25rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #columns01 > .wrapper > .inner {
+                    --gutters: 1.875rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #container02 > .wrapper > .inner {
+                    --gutters: 1.875rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #columns05 > .wrapper > .inner {
+                    --gutters: 1.875rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #columns02 > .wrapper > .inner {
+                    --gutters: 1.875rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #container01 > .wrapper > .inner {
+                    --gutters: 1.875rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #container03 > .wrapper > .inner {
+                    --gutters: 1.875rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #container04 > .wrapper > .inner {
+                    --gutters: 1.875rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #columns04 > .wrapper > .inner {
+                    --gutters: 2.25rem;
+                    --padding-horizontal: 0rem;
+                    --padding-vertical: 0rem;
+                    --spacing: 0.75rem;
+                }
+
+                #gallery01 ul li .caption p {
+                    font-size: 1em;
+                }
+
+                #gallery01 ul {
+                    gap: 1.21875rem;
+                }
+
+                #list01 {
+                    font-size: 0.75em;
+                }
+
+                #list01 ul li:after {
+                    width: 0.5rem;
+                }
+
+                #list01 ul li:before {
+                    height: 0.9375rem;
+                    line-height: 0.9375rem;
+                    min-width: 0.703125rem;
+                }
+
+                #list02 {
+                    font-size: 0.75em;
+                }
+
+                #list02 ul li:after {
+                    width: 0.5rem;
+                }
+
+                #list02 ul li:before {
+                    height: 0.9375rem;
+                    line-height: 0.9375rem;
+                    min-width: 0.703125rem;
+                }
+
+                #list04 {
+                    font-size: 0.75em;
+                }
+
+                #list04 ul li:after {
+                    width: 0.5rem;
+                }
+
+                #list04 ul li:before {
+                    height: 0.9375rem;
+                    line-height: 0.9375rem;
+                    min-width: 0.703125rem;
+                }
+
+                #list05 {
+                    font-size: 0.75em;
+                }
+
+                #list05 ul li:after {
+                    width: 0.5rem;
+                }
+
+                #list05 ul li:before {
+                    height: 0.9375rem;
+                    line-height: 0.9375rem;
+                    min-width: 0.703125rem;
+                }
+
+                #list06 {
+                    font-size: 0.75em;
+                }
+
+                #list06 ul li:after {
+                    width: 0.5rem;
+                }
+
+                #list06 ul li:before {
+                    height: 0.9375rem;
+                    line-height: 0.9375rem;
+                    min-width: 0.703125rem;
+                }
+
+                #list07 {
+                    font-size: 0.75em;
+                }
+
+                #list07 ul li:after {
+                    width: 0.5rem;
+                }
+
+                #list07 ul li:before {
+                    height: 0.9375rem;
+                    line-height: 0.9375rem;
+                    min-width: 0.703125rem;
+                }
+
+                #list03 {
+                    font-size: 1em;
+                }
+
+                #list03 ul li:after {
+                    width: 0.625rem;
+                }
+
+                #list03 ul li:before {
+                    height: 1.75rem;
+                    line-height: 1.75rem;
+                    min-width: 0.75rem;
+                }
+            }
         </style>
         <noscript>
             <style>
@@ -7451,6 +8096,15 @@
                     }
                     e = parent.querySelector('[data-autofocus="1"]');
                     x = e ? e.tagName : null;
+                    switch (x) {
+                    case 'FORM':
+                        e = e.querySelector('.field input, .field select, .field textarea');
+                        if (e)
+                            e.focus();
+                        break;
+                    default:
+                        break;
+                    }
                     a = parent.querySelectorAll('unloaded-script');
                     for (i = 0; i < a.length; i++) {
                         x = document.createElement('script');
@@ -7694,7 +8348,20 @@
                         if (!section || section.tagName != 'SECTION')
                             return;
                         location.href = '#' + section.id.replace(/-section$/, '');
-                    },, activateSection = function(section, scrollPoint) {
+                    }, resetSectionChangeElements = function(section) {
+                        var ee, e, x;
+                        ee = section.querySelectorAll('[data-reset-on-section-change="1"]');
+                        for (e of ee) {
+                            x = e ? e.tagName : null;
+                            switch (x) {
+                            case 'FORM':
+                                e.reset();
+                                break;
+                            default:
+                                break;
+                            }
+                        }
+                    }, activateSection = function(section, scrollPoint) {
                         var sectionHeight, currentSection, currentSectionHeight, name, hideHeader, hideFooter, disableAutoScroll, ee, k;
                         if (!section.classList.contains('inactive')) {
                             name = (section ? section.id.replace(/-section$/, '') : null);
@@ -8143,6 +8810,709 @@
                     });
                 }
                 )();
+                function form(id, settings) {
+                    var _this = this;
+                    this.id = id;
+                    this.mode = settings.mode;
+                    this.method = settings.method;
+                    this.code = ('code'in settings ? settings.code : null);
+                    this.success = settings.success;
+                    this.initHandler = ('initHandler'in settings ? settings.initHandler : null);
+                    this.presubmitHandler = ('presubmitHandler'in settings ? settings.presubmitHandler : null);
+                    this.failure = ('failure'in settings ? settings.failure : null);
+                    this.optional = ('optional'in settings ? settings.optional : []);
+                    this.events = ('events'in settings ? settings.events : {});
+                    this.recaptcha = ('recaptcha'in settings ? settings.recaptcha : null);
+                    this.collectTrackingParameters = ('collectTrackingParameters'in settings ? settings.collectTrackingParameters : false);
+                    this.exportVariables = ('exportVariables'in settings ? settings.exportVariables : false);
+                    this.$form = $('#' + this.id);
+                    this.$form.addEventListener('change', function(event) {
+                        if (event.target.tagName != 'INPUT')
+                            return;
+                        _this.refreshInput(event.target);
+                    });
+                    this.$form.addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        _this.triggerSubmit();
+                    });
+                    this.$form.addEventListener('reset', function(event) {
+                        setTimeout(function() {
+                            _this.refreshInputs();
+                        }, 0);
+                    });
+                    this.$form.addEventListener('keydown', function(event) {
+                        if (event.keyCode == 13 && event.ctrlKey) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            _this.triggerSubmit();
+                        }
+                    });
+                    var x = $('#' + this.id + ' input[name="' + settings.hid + '"]');
+                    if (x) {
+                        x.disabled = true;
+                        x.parentNode.style.display = 'none';
+                    }
+                    this.$submit = $('#' + this.id + ' .actions button[type="submit"]');
+                    this.$submit.disabled = false;
+                    this.initInputs();
+                    if (this.initHandler) {
+                        errors.handle(function(message) {
+                            return _this.failureHandler(message);
+                        });
+                        if (!this.initHandler())
+                            errors.unhandle();
+                    }
+                    if (this.recaptcha) {
+                        grecaptcha.ready(function() {
+                            var id;
+                            id = grecaptcha.render(_this.$submit, {
+                                sitekey: _this.recaptcha.key,
+                                isolated: true,
+                                theme: (_this.recaptcha.darkMode ? 'dark' : 'light'),
+                                callback: function(token) {
+                                    _this.submit({
+                                        recaptchaToken: token
+                                    }, ['g-recaptcha-response']);
+                                    grecaptcha.reset(id);
+                                }
+                            });
+                        });
+                    }
+                }
+                ;form.prototype.completionHandler = function(properties, eventHandler, response) {
+                    if (eventHandler !== null)
+                        eventHandler.apply(this.$form, [response]);
+                    switch (properties.mode) {
+                    default:
+                    case 1:
+                        alert(this.expandVariables(properties.value));
+                        break;
+                    case 2:
+                        location.href = this.expandVariables(properties.value);
+                        break;
+                    case 3:
+                        properties.value.apply(this.$form, [response]);
+                        break;
+                    case 4:
+                        break;
+                    }
+                }
+                ;
+                form.prototype.failureHandler = function(message) {
+                    var eventHandler;
+                    eventHandler = ('onfailure'in this.events) ? this.events.onfailure : null;
+                    if (message.charAt(0) == '*')
+                        this.completionHandler({
+                            mode: 1,
+                            value: message.substring(1)
+                        }, eventHandler, null);
+                    else if (this.failure)
+                        this.completionHandler(this.failure, eventHandler, null);
+                    else
+                        this.completionHandler({
+                            mode: 1,
+                            value: message
+                        }, eventHandler, null);
+                    this.waiting(false);
+                    errors.unhandle();
+                    return true;
+                }
+                ;
+                form.prototype.finalizeInput = function(input) {
+                    try {
+                        if (!input || typeof input != 'object' || !('name'in input))
+                            throw 'Not an input.';
+                        if (!('value'in input))
+                            throw 'Missing "value" property.';
+                        if (input.type == 'text' || input.type == 'email' || input.type == 'textarea' || input.type == 'hidden')
+                            input.value = input.value.replace(/^\s+/, '').replace(/\s+$/, '');
+                    } catch (e) {}
+                }
+                ;
+                form.prototype.formatDate = function(value, format) {
+                    var date, options, a, s;
+                    if (!value.match(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/))
+                        return '';
+                    a = value.split('-');
+                    date = new Date(a[0],parseInt(a[1]) - 1,parseInt(a[2]),0,0,0,0);
+                    switch (format) {
+                    default:
+                    case 'short':
+                        break;
+                    case 'medium':
+                        options = {
+                            dateStyle: 'medium'
+                        };
+                        break;
+                    case 'long':
+                        options = {
+                            dateStyle: 'long'
+                        };
+                        break;
+                    case 'full':
+                        options = {
+                            dateStyle: 'full'
+                        };
+                        break;
+                    }
+                    s = new Intl.DateTimeFormat(undefined,options).format(date);
+                    return s;
+                }
+                ;
+                form.prototype.getAmount = function() {
+                    var x;
+                    x = this.getRequiredInputValue('amount', ['select-one', 'number']);
+                    if (!x)
+                        return null;
+                    x = parseFloat(x);
+                    if (isNaN(x) || x < 1.00 || x > 100000.00)
+                        return null;
+                    return x;
+                }
+                ;
+                form.prototype.getEmail = function() {
+                    return this.getRequiredInputValue('email', 'email');
+                }
+                ;
+                form.prototype.getQuantity = function() {
+                    var x;
+                    x = this.getRequiredInputValue('quantity', ['select-one', 'number']);
+                    if (!x)
+                        return null;
+                    x = parseInt(x);
+                    if (isNaN(x) || x < 1 || x > 100000)
+                        return null;
+                    return x;
+                }
+                ;
+                form.prototype.getRequiredInputValue = function(name, type) {
+                    var input;
+                    for (input of this.$form.elements) {
+                        if (((Array.isArray(type) && type.includes(input.type)) || input.type == type) && input.name == name && input.value !== '' && input.value !== null)
+                            return input.value;
+                    }
+                    return null;
+                }
+                ;
+                form.prototype.initInputs = function() {
+                    var _this = this, i, input;
+                    for (i = 0; i < this.$form.elements.length; i++) {
+                        input = this.$form.elements[i];
+                        switch (input.type) {
+                        case 'number':
+                            (function(input) {
+                                var p = input.parentNode
+                                  , decrement = p.querySelector('button.decrement')
+                                  , increment = p.querySelector('button.increment');
+                                input.addEventListener('blur', function(event) {
+                                    _this.normalizeNumberInput(input);
+                                });
+                                if (decrement && increment) {
+                                    decrement.addEventListener('click', function(event) {
+                                        event.preventDefault();
+                                        _this.normalizeNumberInput(input);
+                                        input.stepDown(1);
+                                        _this.normalizeNumberInput(input);
+                                    });
+                                    increment.addEventListener('click', function(event) {
+                                        event.preventDefault();
+                                        _this.normalizeNumberInput(input);
+                                        input.stepUp(1);
+                                        _this.normalizeNumberInput(input);
+                                    });
+                                }
+                            }
+                            )(input);
+                            break;
+                        case 'file':
+                            (function(input) {
+                                var p = input.parentNode
+                                  , select = p.querySelector('button.select');
+                                select.addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    input.click();
+                                });
+                                input.addEventListener('focus', function(event) {
+                                    event.target.parentNode.classList.add('focus');
+                                });
+                                input.addEventListener('blur', function(event) {
+                                    event.target.parentNode.classList.remove('focus');
+                                });
+                            }
+                            )(input);
+                            break;
+                        case 'date':
+                            (function(input) {
+                                var p = input.parentNode, select = p.querySelector('button.select'), changeHandler, x, y, z;
+                                select.addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    input.click();
+                                    input.focus();
+                                });
+                                switch (client.browser) {
+                                case 'safari':
+                                    input.addEventListener('keydown', function(event) {
+                                        switch (event.keyCode) {
+                                        case 9:
+                                            event.preventDefault();
+                                            input.blur();
+                                            break;
+                                        case 27:
+                                            event.preventDefault();
+                                            input.blur();
+                                            break;
+                                        case 33:
+                                            break;
+                                        case 34:
+                                            break;
+                                        case 37:
+                                            break;
+                                        case 38:
+                                            break;
+                                        case 39:
+                                            break;
+                                        case 40:
+                                            break;
+                                        default:
+                                            event.preventDefault();
+                                            break;
+                                        }
+                                    });
+                                    break;
+                                default:
+                                    input.addEventListener('click', function(event) {
+                                        event.preventDefault();
+                                        input.focus();
+                                        input.showPicker();
+                                    });
+                                    break;
+                                }
+                                changeHandler = function() {
+                                    if (input.value)
+                                        p.setAttribute('data-value', _this.formatDate(input.value, p.dataset.format));
+                                    else
+                                        p.setAttribute('data-value', '');
+                                }
+                                ;
+                                input.addEventListener('change', function(event) {
+                                    changeHandler();
+                                });
+                                changeHandler();
+                            }
+                            )(input);
+                            break;
+                        case 'text':
+                        case 'textarea':
+                        case 'email':
+                            input.addEventListener('blur', function(event) {
+                                this.value = this.value.replace(/^\s+/, '').replace(/\s+$/, '');
+                            });
+                            break;
+                        }
+                        this.refreshInput(input);
+                    }
+                }
+                ;
+                form.prototype.isAllowedInput = function(input, ignore) {
+                    try {
+                        if (!input || typeof input != 'object' || !('name'in input))
+                            throw 'Not an input.';
+                        if (ignore && ignore.indexOf(input.name) != -1)
+                            throw 'Input is ignored.';
+                        if (input.disabled)
+                            throw 'Input is disabled.';
+                        switch (input.type) {
+                        case 'text':
+                        case 'email':
+                        case 'textarea':
+                        case 'select-one':
+                        case 'checkbox':
+                        case 'number':
+                        case 'tel':
+                        case 'file':
+                        case 'date':
+                        case 'hidden':
+                            break;
+                        default:
+                            throw 'Not an allowed input.';
+                        }
+                    } catch (e) {
+                        return false;
+                    }
+                    return true;
+                }
+                ;
+                form.prototype.isValidInput = function(input) {
+                    var result = false;
+                    switch (input.type) {
+                    case 'email':
+                        result = input.value.match(new RegExp("^([a-zA-Z0-9\\_\\-\\.\\+]+)@([a-zA-Z0-9\\-\\.]+)\\.([a-zA-Z]+)$"));
+                        break;
+                    case 'select-one':
+                        result = input.value.match(new RegExp("^[^\\<\\>]+$"));
+                        break;
+                    case 'checkbox':
+                        result = true;
+                        break;
+                    case 'number':
+                        result = input.value.match(new RegExp("^[0-9\\-\\.]+$"));
+                        break;
+                    case 'tel':
+                        result = input.value.match(new RegExp("^[0-9\\-\\+\\(\\)\\ \\#\\*]+$"));
+                        break;
+                    case 'file':
+                        result = true;
+                        break;
+                    case 'date':
+                        result = input.value.match(new RegExp("^[0-9]{4}-[0-9]{2}-[0-9]{2}$"));
+                        break;
+                    default:
+                    case 'text':
+                    case 'textarea':
+                    case 'hidden':
+                        result = true;
+                        break;
+                    }
+                    return result;
+                }
+                ;
+                form.prototype.normalizeNumberInput = function(input) {
+                    var min = parseFloat(input.min)
+                      , max = parseFloat(input.max)
+                      , step = parseFloat(input.step)
+                      , v = parseFloat(input.value);
+                    if (isNaN(v)) {
+                        if (!input.required) {
+                            input.value = null;
+                            return;
+                        }
+                        v = isNaN(min) ? 0 : min;
+                    }
+                    if (!isNaN(min) && v < min)
+                        v = min;
+                    if (!isNaN(max) && v > max)
+                        v = max;
+                    if (!isNaN(step) && (v % step) !== 0)
+                        v = Math.round(v / step) * step;
+                    switch (input.dataset.category) {
+                    case 'currency':
+                        v = parseFloat(v).toFixed(2);
+                        break;
+                    default:
+                    case 'decimal':
+                        v = parseFloat(v);
+                        break;
+                    case 'integer':
+                        v = parseInt(v);
+                        break;
+                    }
+                    input.value = v;
+                }
+                ;
+                form.prototype.expandVariables = function(s) {
+                    if (typeof variables === 'undefined')
+                        return s;
+                    if (variables.hasVariables(s)) {
+                        for (input of this.$form.elements) {
+                            if (!this.isAllowedInput(input))
+                                continue;
+                            value = '';
+                            if (this.isValidInput(input)) {
+                                switch (input.type) {
+                                case 'checkbox':
+                                    value = input.checked ? 'true' : 'false';
+                                    break;
+                                case 'email':
+                                case 'select-one':
+                                case 'number':
+                                case 'tel':
+                                case 'text':
+                                case 'textarea':
+                                case 'hidden':
+                                    value = input.value;
+                                    break;
+                                default:
+                                    value = '';
+                                    break;
+                                }
+                            } else
+                                value = '';
+                            if (!!(s.match(/^(#[a-zA-Z0-9\_\-]+|[a-z0-9\-\.]+:[a-zA-Z0-9\~\!\@\#$\%\&\-\_\+\=\;\,\.\?\/\:\{\}\|]+)$/)))
+                                value = encodeURIComponent(value);
+                            s = variables.expandVariable(s, input.name, value);
+                        }
+                    }
+                    s = variables.expandVariableString(this.$form, s);
+                    return s;
+                }
+                ;
+                form.prototype.exportVariableValues = function(source, values, suffix) {
+                    if (typeof variables === 'undefined' || this.exportVariables !== true)
+                        return;
+                    variables.import(source + (suffix ? suffix : ''), values);
+                    variables.purge('form' + (suffix ? suffix : ''));
+                    variables.import('form' + (suffix ? suffix : ''), values);
+                }
+                ;
+                form.prototype.pause = function(values, handler) {
+                    var _this = this;
+                    this.waiting(true);
+                    db.open('formData', function(objectStore) {
+                        db.delete(objectStore, _this.id, function() {
+                            db.put(objectStore, values, function() {
+                                handler.call(_this);
+                            });
+                        });
+                    });
+                }
+                ;
+                form.prototype.refreshInput = function(input) {
+                    var a = [], p;
+                    switch (input.type) {
+                    case 'file':
+                        p = input.parentNode;
+                        if (input.files.length > 0)
+                            p.setAttribute('data-filename', input.files[0].name);
+                        else
+                            p.setAttribute('data-filename', '');
+                        break;
+                    case 'date':
+                        p = input.parentNode;
+                        if (input.value)
+                            p.setAttribute('data-value', this.formatDate(input.value, p.dataset.format));
+                        else
+                            p.setAttribute('data-value', '');
+                        break;
+                    default:
+                        break;
+                    }
+                }
+                ;
+                form.prototype.refreshInputs = function() {
+                    var i;
+                    for (i = 0; i < this.$form.elements.length; i++)
+                        this.refreshInput(this.$form.elements[i]);
+                }
+                ;
+                form.prototype.resume = function(handler) {
+                    var _this = this;
+                    this.waiting(true);
+                    this.scrollIntoView();
+                    db.open('formData', function(objectStore) {
+                        db.get(objectStore, _this.id, function(values) {
+                            db.delete(objectStore, _this.id, function() {
+                                var e, i, v;
+                                for (i in _this.$form.elements) {
+                                    e = _this.$form.elements[i];
+                                    if (!e.name)
+                                        continue;
+                                    v = (e.name in values ? values[e.name] : null);
+                                    switch (e.type) {
+                                    case 'checkbox':
+                                        e.checked = (v == 'checked' ? true : false);
+                                        break;
+                                    case 'file':
+                                        if (v)
+                                            e.parentNode.setAttribute('data-filename', v.name);
+                                        break;
+                                    default:
+                                        e.value = v;
+                                        break;
+                                    }
+                                }
+                                handler.call(_this, values);
+                            });
+                        });
+                    });
+                }
+                ;
+                form.prototype.scrollIntoView = function() {
+                    window.scrollTo(0, this.$form.offsetTop);
+                }
+                ;
+                form.prototype.submit = function(values, ignore) {
+                    var _this = this, input, result, _success, _failure, a, b, i, e, fd, k, x, usp;
+                    try {
+                        for (input of this.$form.elements) {
+                            if (!this.isAllowedInput(input, ignore))
+                                continue;
+                            if (this.optional.indexOf(input.name) !== -1 && (input.value === '' || input.value === null || (input.type == 'checkbox' && !input.checked)))
+                                continue;
+                            this.finalizeInput(input);
+                            if (!this.isValidInput(input))
+                                throw 'Not valid.';
+                        }
+                    } catch (e) {
+                        alert('Missing or invalid fields. Please try again.');
+                        return;
+                    }
+                    if ('onsubmit'in this.events) {
+                        if (this.events.onsubmit.apply(this.$form) === false)
+                            return;
+                    }
+                    a = this.values();
+                    if (values) {
+                        for (k in values)
+                            a[k] = values[k];
+                    }
+                    if (this.collectTrackingParameters) {
+                        usp = new URLSearchParams(window.location.search);
+                        b = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+                        for (k of b) {
+                            x = usp.get(k);
+                            if (x) {
+                                x = x.trim();
+                                x = x.replace(/[^a-zA-Z0-9\-\_\%\+\s]/g, '');
+                                x = x.replace(/\s+/g, '_');
+                                if (x.length <= 256)
+                                    a[k] = x;
+                            }
+                        }
+                    }
+                    switch (this.method) {
+                    default:
+                    case 'ajax':
+                        break;
+                    case 'get':
+                    case 'post':
+                        for (k in a) {
+                            if (this.$form.elements[k])
+                                continue;
+                            e = document.createElement('input');
+                            e.setAttribute('type', 'hidden');
+                            e.setAttribute('name', k);
+                            this.$form.appendChild(e);
+                            e.value = a[k];
+                        }
+                        this.$form.submit();
+                        return;
+                    case 'code':
+                        if (typeof this.code == 'function') {
+                            this.waiting(true);
+                            _success = function() {
+                                _this.exportVariableValues(_this.id, a);
+                                _this.completionHandler(_this.success, ('onsuccess'in _this.events) ? _this.events.onsuccess : null, null);
+                                _this.waiting(false);
+                            }
+                            ;
+                            _failure = function() {
+                                _this.completionHandler(_this.failure, ('onfailure'in _this.events) ? _this.events.onfailure : null, null);
+                                _this.waiting(false);
+                            }
+                            ;
+                            result = this.code.apply(this.$form, [_success, _failure]);
+                            if (result === true)
+                                _success();
+                            else if (result === false)
+                                _failure();
+                        }
+                        return;
+                    }
+                    if (x = $(':focus'))
+                        x.blur();
+                    errors.handle(function(message) {
+                        return _this.failureHandler(message);
+                    });
+                    if (this.presubmitHandler)
+                        this.presubmitHandler.call(this, a);
+                    else
+                        this.submitHandler(a);
+                }
+                ;
+                form.prototype.submitHandler = function(values) {
+                    var _this = this, x, k, data;
+                    this.waiting(true);
+                    data = new FormData;
+                    for (k in values) {
+                        if (values[k] && typeof values[k] == 'object' && ('blob'in values[k]))
+                            data.append(k, values[k].blob, values[k].name);
+                        else
+                            data.append(k, values[k]);
+                    }
+                    x = new XMLHttpRequest();
+                    x.open('POST', ['', 'post', this.mode].join('/'));
+                    x.send(data);
+                    x.onreadystatechange = function() {
+                        var o;
+                        if (x.readyState != 4)
+                            return;
+                        if (x.status != 200)
+                            throw new Error('Failed server response (' + x.status + ')');
+                        try {
+                            o = JSON.parse(x.responseText);
+                        } catch (e) {
+                            throw new Error('Invalid server response');
+                        }
+                        if (!('result'in o) || !('message'in o))
+                            throw new Error('Incomplete server response');
+                        if (o.result !== true) {
+                            if ('response'in o)
+                                console.log(o.response);
+                            throw new Error(o.message);
+                        }
+                        _this.exportVariableValues(_this.id, values);
+                        if ('response'in o)
+                            _this.exportVariableValues(_this.id, o.response, '_response');
+                        _this.completionHandler(_this.success, ('onsuccess'in _this.events) ? _this.events.onsuccess : null, 'response'in o ? o.response : null);
+                        _this.$form.reset();
+                        _this.waiting(false);
+                        errors.unhandle();
+                    }
+                    ;
+                }
+                ;
+                form.prototype.triggerSubmit = function() {
+                    if (this.recaptcha)
+                        this.$submit.click();
+                    else if (!this.$submit.disabled)
+                        this.submit();
+                }
+                ;
+                form.prototype.values = function() {
+                    var a = {};
+                    for (i in this.$form.elements) {
+                        e = this.$form.elements[i];
+                        if (!e.name || !e.value)
+                            continue;
+                        switch (e.type) {
+                        case 'checkbox':
+                            a[e.name] = (e.checked ? 'checked' : null);
+                            break;
+                        case 'file':
+                            a[e.name] = {
+                                name: e.files[0].name,
+                                blob: new Blob([e.files[0]],{
+                                    type: e.files[0].type
+                                })
+                            };
+                            break;
+                        default:
+                            a[e.name] = e.value;
+                            break;
+                        }
+                    }
+                    a['id'] = this.id;
+                    return a;
+                }
+                ;
+                form.prototype.waiting = function(x) {
+                    var _this = this;
+                    if (x) {
+                        $body.classList.add('is-instant');
+                        this.$submit.disabled = true;
+                        this.$submit.classList.add('waiting');
+                        if (this.recaptcha)
+                            setTimeout(function() {
+                                _this.$submit.disabled = true;
+                            }, 0);
+                    } else {
+                        $body.classList.remove('is-instant');
+                        this.$submit.classList.remove('waiting');
+                        this.$submit.disabled = false;
+                    }
+                }
+                ;
                 new form('form01',{
                     mode: 'contact',
                     method: 'ajax',
