@@ -3,7 +3,7 @@
     <head>
         <title>Ramya Pravallika</title>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="color-scheme" content="light only"/>
         <meta name="description" content="Personal Portfolio"/>
         <meta property="og:site_name" content="Ramya Pravallika"/>
@@ -7578,7 +7578,7 @@
                                 <div class="inner">
                                     <div>
                                         <div id="image02" class="image full">
-                                            <a href="#two" class="frame">
+                                            <a href="#four" class="frame">
                                                 <img src="image02.jpg?v=20b8e005" alt=""/>
                                             </a>
                                         </div>
@@ -7970,25 +7970,14 @@
                         </p>
                         <hr id="divider18">
                         <h2 id="text34">Contact me</h2>
-                        <form id="form01" method="post">
-                            <div class="inner">
-                                <div class="field">
-                                    <input type="text" name="name" id="form01-name" placeholder="Name" maxlength="128" required/>
-                                </div>
-                                <div class="field">
-                                    <input type="email" name="email" id="form01-email" placeholder="Email" maxlength="128" required/>
-                                </div>
-                                <div class="field">
-                                    <input type="text" name="telephone" id="form01-telephone" placeholder="Telephone" maxlength="128"/>
-                                </div>
-                                <div class="field">
-                                    <textarea data-gramm_editor="false" name="message" id="form01-message" placeholder="Message" maxlength="16384" required></textarea>
-                                </div>
-                                <div class="actions">
-                                    <button type="submit">Submit</button>
-                                </div>
-                            </div>
-                            <input type="hidden" name="id" value="form01"/>
+                        <form action="https://formspree.io/f/mgvwovjq" method="post">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" required><br><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="_replyto" required><br><br>
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" required></textarea><br><br>
+                            <input type="submit" value="Submit">
                         </form>
                         <div id="columns04" class="container default">
                             <div class="wrapper">
