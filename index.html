@@ -7650,7 +7650,7 @@
                         </p>
                         <hr id="divider18">
                         <h2 id="text34">Contact me</h2>
-                        <form id="form02" action="https://formspree.io/f/mgvwovjq" method="get">
+                        <form id="form02" action="https://formspree.io/f/mgvwovjq" method="post">
                             <div class="inner">
                                 <div class="field">
                                     <input type="text" name="name" id="form02-name" placeholder="Name" maxlength="128" required/>
@@ -7667,29 +7667,32 @@
                             </div>
                             <input type="hidden" name="id" value="form02"/>
                         </form>
-                        <script>
-  document.getElementById('form02').addEventListener('submit', function(event) {
+                       <script>
+  document.getElementById('form02').addEventListener('submit', async function(event) {
     event.preventDefault(); // Prevent the default form submission
 
-    const formData = new FormData(this);
-    const queryString = new URLSearchParams(formData).toString();
-    const url = `https://formspree.io/f/mgvwovjq?${queryString}`;
+    const form = event.target;
+    const formData = new FormData(form);
+    const formAction = form.action;
 
-    fetch(url, { method: 'GET' })
-      .then(response => response.json())
-      .then(data => {
-        if (data.ok) {
-          alert('Form submitted successfully!');
-        } else {
-          alert('Error submitting form');
+    try {
+      const response = await fetch(formAction, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
         }
-      })
-      .catch(error => {
-        alert('Error submitting form');
-        console.error('Error:', error);
       });
+
+      if (response.ok) {
+        alert('Form submitted successfully!');
+      } else {
+        alert('Failed to submit the form. Please try again.');
+      }
+    }
   });
 </script>
+
                         <div id="columns04" class="container default">
                             <div class="wrapper">
                                 <div class="inner">
@@ -8218,6 +8221,7 @@
                                 break;
                             }
                         }
+                        
                     }, activateSection = function(section, scrollPoint) {
                         var sectionHeight, currentSection, currentSectionHeight, name, hideHeader, hideFooter, disableAutoScroll, ee, k;
                         if (!section.classList.contains('inactive')) {
