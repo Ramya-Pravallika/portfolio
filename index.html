@@ -7237,23 +7237,30 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
-            border: 1px solid #000;
+            border: 1px solid #ccc;
             border-radius: 25px;
             box-sizing: border-box;
             font-size: 16px;
         }
+        .container1 input[type="text"]::placeholder,
+        .container1 input[type="email"]::placeholder,
+        .container1 textarea::placeholder {
+            color: #aaa;
+        }
         .container1 textarea {
             border-radius: 25px;
+            resize: none;
         }
         .container1 input[type="submit"] {
             width: 100%;
             padding: 10px;
             background-color: #28a745;
-            border: 1px solid #000;
+            border: none;
             border-radius: 25px;
-            color: #000;
+            color: #fff;
             font-size: 16px;
             cursor: pointer;
+            box-sizing: border-box;
         }
         .container1 input[type="submit"]:hover {
             background-color: #218838;
@@ -8025,7 +8032,7 @@
                                 <label for="email">Email</label>
                                 <input type="email" id="email" name="email" placeholder="Email" required>
                                 <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                                <textarea id="message" name="message" placeholder="Message" rows="10" required></textarea>
                                 <input type="submit" value="SUBMIT">
                         </form>
                             </div>
