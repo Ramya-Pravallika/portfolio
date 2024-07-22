@@ -4611,7 +4611,7 @@
             }
 
             /* General form styles */
-            #form01 .inner {
+            #form02 .inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4625,13 +4625,13 @@
 }
 
 /* Field styles */
-#form01 .field {
+#form02 .field {
   width: 100%;
   margin-bottom: 15px;
 }
 
-#form01 .field input,
-#form01 .field textarea {
+#form02 .field input,
+#form02 .field textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -4640,19 +4640,19 @@
 }
 
 /* Textarea specific styles */
-#form01 .field textarea {
+#form02 .field textarea {
   resize: vertical;
   height: 100px;
 }
 
 /* Button styles */
-#form01 .actions {
+#form02 .actions {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-#form01 .actions button {
+#form02 .actions button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -4663,28 +4663,28 @@
   transition: background-color 0.3s ease;
 }
 
-#form01 .actions button:hover {
+#form02 .actions button:hover {
   background-color: #0056b3;
 }
 
 /* Placeholder styles */
-#form01 input::placeholder,
-#form01 textarea::placeholder {
+#form02 input::placeholder,
+#form02 textarea::placeholder {
   color: #888;
 }
 
 /* Responsive styles */
 @media (max-width: 600px) {
-  #form01 .inner {
+  #form02 .inner {
     padding: 15px;
   }
 
-  #form01 .field input,
-  #form01 .field textarea {
+  #form02 .field input,
+  #form02 .field textarea {
     font-size: 14px;
   }
 
-  #form01 .actions button {
+  #form02 .actions button {
     font-size: 14px;
   }
 }
@@ -7650,23 +7650,46 @@
                         </p>
                         <hr id="divider18">
                         <h2 id="text34">Contact me</h2>
-                        <form id="form01" action="https://formspree.io/f/mgvwovjq" method="post">
+                        <form id="form02" action="https://formspree.io/f/mgvwovjq" method="get">
                             <div class="inner">
                                 <div class="field">
-                                    <input type="text" name="name" id="form01-name" placeholder="Name" maxlength="128" required/>
+                                    <input type="text" name="name" id="form02-name" placeholder="Name" maxlength="128" required/>
                                 </div>
                                 <div class="field">
-                                    <input type="email" name="email" id="form01-email" placeholder="Email" maxlength="128" required/>
+                                    <input type="email" name="email" id="form02-email" placeholder="Email" maxlength="128" required/>
                                 </div>
                                 <div class="field">
-                                    <textarea data-gramm_editor="false" name="message" id="form01-message" placeholder="Message" maxlength="16384" required></textarea>
+                                    <textarea data-gramm_editor="false" name="message" id="form02-message" placeholder="Message" maxlength="16384" required></textarea>
                                 </div>
                                 <div class="actions">
                                     <button type="submit">Submit</button>
                                 </div>
                             </div>
-                            <input type="hidden" name="id" value="form01"/>
+                            <input type="hidden" name="id" value="form02"/>
                         </form>
+                        <script>
+  document.getElementById('form02').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(this);
+    const queryString = new URLSearchParams(formData).toString();
+    const url = `https://formspree.io/f/mgvwovjq?${queryString}`;
+
+    fetch(url, { method: 'GET' })
+      .then(response => response.json())
+      .then(data => {
+        if (data.ok) {
+          alert('Form submitted successfully!');
+        } else {
+          alert('Error submitting form');
+        }
+      })
+      .catch(error => {
+        alert('Error submitting form');
+        console.error('Error:', error);
+      });
+  });
+</script>
                         <div id="columns04" class="container default">
                             <div class="wrapper">
                                 <div class="inner">
@@ -9347,7 +9370,7 @@
                     }
                 }
                 ;
-                new form('form01',{
+                new form('form02',{
                     mode: 'contact',
                     method: 'ajax',
                     hid: 'telephone',
